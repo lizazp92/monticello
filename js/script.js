@@ -10,6 +10,7 @@ $(document).ready(function () {
     autoplay: true,
     autoplaySpeed: 2000,
   });
+
   $("div.news-slider").slick({
     arrows: true,
     dots: true,
@@ -23,36 +24,29 @@ $(document).ready(function () {
     prevArrow: $(".section-news__prev-arrow"),
     nextArrow: $(".section-news__next-arrow"),
   });
-  document.querySelectorAll("[data-scrollTo]").forEach(function (item) {
-    item.onclick = function () {
-      document
-        .querySelector(".menu__link--active")
-        .classList.remove("menu__link--active");
-      item.classList.add("menu__link--active");
-      let elementName = item.getAttribute("data-scrollTo");
-      document.querySelector(`.${elementName}`).scrollIntoView({
-        behavior: "smooth",
-      });
-    };
-  });
-  document.querySelectorAll(".project-item__button").forEach(function (button) {
-    button.onclick = function () {
-      let parentElement = button.parentElement;
-      let description = parentElement.querySelector(
-        ".project-item__description"
-      );
-      description.classList.toggle("project-item__description--hidden");
-      if (description.classList.contains("project-item__description--hidden")) {
-        button.innerHTML = "MORE DETAILS";
-      } else {
-        button.innerHTML = "LESS DETAILS";
-      }
-    };
-  });
-  const seeButton = document.querySelector(".section-gallery__button");
-  seeButton.addEventListener("click", () => {
-    const gallery = document.createElement("div");
-  });
+
+  document
+    .querySelectorAll(".whatwedo-section-item__button")
+    .forEach(function (button) {
+      button.onclick = function () {
+        let parentElement = button.parentElement;
+        let description = parentElement.querySelector(
+          ".whatwedo-section-item__description"
+        );
+        description.classList.toggle(
+          "whatwedo-section-item__description--hidden"
+        );
+        if (
+          description.classList.contains(
+            "whatwedo-section-item__description--hidden"
+          )
+        ) {
+          button.innerHTML = "MORE DETAILS";
+        } else {
+          button.innerHTML = "LESS DETAILS";
+        }
+      };
+    });
 });
 
 function initMap() {
@@ -66,3 +60,39 @@ function initMap() {
     map,
   });
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = document.querySelectorAll(".navigation__list-item-link");
+  const arrow = document.querySelector(".arrow__img");
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+
+      const targetId = this.getAttribute("href").substring(1);
+      const targetSection = document.getElementById(targetId);
+
+      if (targetSection) {
+        window.scrollTo({
+          top: targetSection.offsetTop,
+          behavior: "smooth",
+        });
+      }
+    });
+  });
+
+  if (arrow) {
+    arrow.addEventListener("click", function () {
+      const currentSection = arrow.closest("section");
+      if (currentSection) {
+        const nextSection = currentSection.nextElementSibling;
+        if (nextSection) {
+          window.scrollTo({
+            top: nextSection.offsetTop,
+            behavior: "smooth",
+          });
+        }
+      }
+    });
+  }
+});

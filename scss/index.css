@@ -93,12 +93,12 @@
   transition: 500ms ease-in-out;
 }
 
-.project {
+.whatwedo-section {
   padding-bottom: 5rem;
   margin-top: 10rem;
   position: relative;
 }
-.project__title {
+.whatwedo-section__title {
   font-size: 44px;
   line-height: 22px;
   font-weight: 700;
@@ -112,7 +112,7 @@
   text-transform: uppercase;
   margin-bottom: 5rem;
 }
-.project__title::before {
+.whatwedo-section__title::before {
   content: "";
   position: absolute;
   border: 1px solid #2c4058;
@@ -120,34 +120,40 @@
   bottom: 70px;
 }
 
-.project-item {
+.whatwedo-section-item {
   padding: 0 8rem;
   margin: 0 auto;
   min-height: 40rem;
   display: flex;
   align-items: center;
 }
-.project-item:last-child {
+.whatwedo-section-item:last-child {
   margin-bottom: 0;
 }
-.project-item__img {
+.whatwedo-section-item__img {
   height: 470px;
   width: 630px;
   margin-right: 70px;
 }
-.project-item__bg-top {
+.whatwedo-section-item__img2 {
+  position: relative;
+  left: 500px;
+  height: 470px;
+  width: 630px;
+}
+.whatwedo-section-item__bg-top {
   position: absolute;
   top: 75px;
   z-index: -1;
   left: 0;
 }
-.project-item__bg-bottom {
+.whatwedo-section-item__bg-bottom {
   position: absolute;
-  bottom: 180px;
+  bottom: 250px;
   z-index: -1;
   right: 0;
 }
-.project-item__subtitle {
+.whatwedo-section-item__subtitle {
   font-size: 22px;
   line-height: 24px;
   font-weight: 400;
@@ -155,7 +161,7 @@
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-.project-item__title {
+.whatwedo-section-item__title {
   font-size: 44px;
   line-height: 24px;
   font-weight: 700;
@@ -163,11 +169,18 @@
   text-transform: uppercase;
   margin-bottom: 40px;
 }
-.project-item__description--hidden {
+.whatwedo-section-item__description--hidden {
   height: 90px;
   overflow: hidden;
 }
-.project-item__location {
+.whatwedo-section-item__description1 {
+  position: absolute;
+  left: 10%;
+  top: 80%;
+  height: auto;
+  width: 400px;
+}
+.whatwedo-section-item__location {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -175,16 +188,9 @@
   font-style: italic;
   color: #2c4058;
 }
-.project-item--reverse {
-  flex-direction: row-reverse;
-}
-.project-item--reverse .project-item__img {
-  margin-left: 70px;
-  margin-right: 0;
-}
 
 .section-news {
-  background-image: url(../imges/news_bg.png);
+  background-image: url(../images/news_bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;

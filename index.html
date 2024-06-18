@@ -95,16 +95,22 @@
           <nav class="navigation">
             <ul class="navigation__list">
               <li class="navigation__list-item">
-                <a class="navigation__list-item-link">ABOUT US</a>
+                <a class="navigation__list-item-link" href="#about-us"
+                  >ABOUT US</a
+                >
               </li>
               <li class="navigation__list-item">
-                <a class="navigation__list-item-link">PROJECTS</a>
+                <a class="navigation__list-item-link" href="#about-us"
+                  >PROJECTS</a
+                >
               </li>
               <li class="navigation__list-item">
-                <a class="navigation__list-item-link">NEWS</a>
+                <a class="navigation__list-item-link" href="#news">NEWS</a>
               </li>
               <li class="navigation__list-item">
-                <a class="navigation__list-item-link">CONTACT</a>
+                <a class="navigation__list-item-link" href="#gallery"
+                  >GALLERY</a
+                >
               </li>
             </ul>
           </nav>
@@ -172,76 +178,44 @@
 
         <!-- WHAT WE DO -->
 
-        <section class="project">
-          <h2 class="project__title">What We Do</h2>
-          <div class="project-item">
+        <section class="whatwedo-section" id="about-us">
+          <h2 class="whatwedo-section__title">What We Do</h2>
+          <div class="whatwedo-section-item">
             <img
-              class="project-item__img"
+              class="whatwedo-section-item__img"
               src="./images/building1.png"
               alt="Building"
             />
             <img
               src="./images/blue1.png"
               alt="blue-background"
-              class="project-item__bg-top"
+              class="whatwedo-section-item__bg-top"
             />
-            <div class="project-item__info">
-              <h3 class="project-item__subtitle">One World</h3>
-              <h2 class="project-item__title">Trade Center</h2>
+            <div class="whatwedo-section-item__info">
+              <h3 class="whatwedo-section-item__subtitle">One World</h3>
+              <h2 class="whatwedo-section-item__title">Trade Center</h2>
               <p
-                class="project-item__description project-item__description--hidden section-description"
+                class="whatwedo-section-item__description whatwedo-section-item__description--hidden section-description"
               >
                 Increasing prosperity in our lives can be accomplished by having
                 the right frame of mind. The truth is, our thoughts are very
                 powerful.
-                <br />
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Tempora ipsum voluptates earum!
+                <br />right frame of mind. The truth is, our thoughts are very
+                powerful. creasing prosperity in our lives can be accomplished
+                by hav
               </p>
-              <button class="project-item__button section-button">
+              <button class="whatwedo-section-item__button section-button">
                 MORE DETAILS
               </button>
-              <h4 class="project-item__location">
+              <h4 class="whatwedo-section-item__location">
                 <i class="icon fa-solid fa-location-dot"></i> New York City,
                 United States - 1776 feet
               </h4>
             </div>
           </div>
-          <div class="project-item project-item--reverse">
-            <img
-              class="project-item__img"
-              src="./images/building2.png"
-              alt="Building image"
-            />
-            <img
-              src="./images/blue2.png"
-              alt=""
-              class="project-item__bg-bottom"
-            />
-            <div class="project-item__info">
-              <h3 class="project-item__subtitle">International</h3>
-              <h2 class="project-item__title">Commerce Center</h2>
-              <p
-                class="project-item__description project-item__description--hidden section-description"
-              >
-                Successful businesses have many things in common, today we’ll
-                look at the big ‘R’ of recognition and how a digital advertising
-                network may help.
-                <br />
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam
-                enim aspernatur eveniet omnis voluptas pariatur.
-              </p>
-              <button class="project-item__button section-button">
-                MORE DETAILS
-              </button>
-              <h5 class="project-item__location">
-                <i class="icon fa-solid fa-location-dot"></i> Hong Kong - 1588
-                Feet
-              </h5>
-            </div>
-          </div>
         </section>
-        <section class="section-news">
+
+        <section class="section-news" id="news">
           <h2 class="section-news__title">Latest News</h2>
           <div class="section-news__slider-wrap">
             <div class="news-slider slider">
@@ -393,7 +367,7 @@
             </div>
           </div>
         </section>
-        <section class="section-gallery">
+        <section class="section-gallery" id="gallery">
           <h2 class="section-gallery__title">Gallery</h2>
           <div class="section-gallery__grid grid">
             <div class="grid__large">
@@ -420,9 +394,9 @@
           <div id="map"></div>
         </section>
       </main>
-      <footer class="footer" id="test">
+      <footer class="footer" id="footer">
         <div class="footer__content">
-          <div class="contacts">
+          <div class="contacts" id="contacts">
             <h2 class="contacts__title">Get In Touch</h2>
             <div class="contacts__container">
               <div class="contacts__info">
