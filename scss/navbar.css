@@ -1,0 +1,38 @@
+.navigation__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  overflow-x: hidden;
+}
+.navigation__list-item {
+  margin-right: 5rem;
+}
+.navigation__list-item :hover {
+  transform: scale(1.3);
+  transition: 500ms ease-in-out;
+}
+.navigation__list-item-link {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.navigation__list-item-link::before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.navigation__list-item-link:hover::before {
+  background-color: white;
+}
+
+/*# sourceMappingURL=navbar.css.map */

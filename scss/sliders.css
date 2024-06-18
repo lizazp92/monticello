@@ -1,0 +1,71 @@
+.header-slider {
+  padding: 0 60px;
+  margin-bottom: 200px;
+  display: flex;
+  align-items: center;
+  position: unset;
+}
+.header-slider .slick-list {
+  overflow: hidden;
+}
+.header-slider .slick-track {
+  display: flex;
+  align-items: flex-start;
+}
+.header-slider .slick-dots {
+  position: absolute;
+  flex-direction: column;
+  right: 35px;
+}
+.header-slider .slick-dots li {
+  margin-bottom: 2rem;
+}
+.header-slider .slick-dots li:last-child {
+  margin-bottom: 0;
+}
+.header-slider__item {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  padding: 3rem 0;
+  display: flex;
+  justify-content: center;
+}
+.header-slider__title {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.7rem;
+  font-size: 80px;
+  line-height: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  line-height: 0.9;
+}
+.header-slider__subtitle {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+
+.slider {
+  cursor: pointer;
+}
+.slider .slick-dots {
+  display: flex;
+}
+.slider .slick-dots li {
+  list-style: none;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+.slider .slick-dots li.slick-active {
+  background-color: #fff;
+}
+.slider .slick-dots li button {
+  display: none;
+}
+
+/*# sourceMappingURL=sliders.css.map */

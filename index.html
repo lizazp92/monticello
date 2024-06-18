@@ -80,10 +80,433 @@
     />
     <!-- STYLE LINKS -->
     <link rel="stylesheet" href="./scss/normalize.css" />
+    <link rel="stylesheet" href="./scss/navbar.css" />
+    <link rel="stylesheet" href="./scss/sliders.css" />
     <link rel="stylesheet" href="./scss/index.css" />
     <script defer src="./js/script.js"></script>
 
     <title>Monticello</title>
   </head>
-  <body></body>
+  <body>
+    <body>
+      <header class="header">
+        <section class="header__wrapper">
+          <img class="header__logo logo" src="./images/Logo.png" alt="logo" />
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__list-item">
+                <a class="navigation__list-item-link">ABOUT US</a>
+              </li>
+              <li class="navigation__list-item">
+                <a class="navigation__list-item-link">PROJECTS</a>
+              </li>
+              <li class="navigation__list-item">
+                <a class="navigation__list-item-link">NEWS</a>
+              </li>
+              <li class="navigation__list-item">
+                <a class="navigation__list-item-link">CONTACT</a>
+              </li>
+            </ul>
+          </nav>
+          <section class="social-media-group">
+            <img
+              class="social-media-group__img"
+              src="./images/facebook_icon.png"
+              alt="Facebook"
+            />
+            <img
+              class="social-media-group__img"
+              src="./images/twitter_icon.png"
+              alt="Twitter"
+            />
+            <img
+              class="social-media-group__img"
+              src="./images/instagram_icon.png"
+              alt="Instagram"
+            />
+          </section>
+        </section>
+      </header>
+      <main id="main">
+        <section class="header-page">
+          <div class="header-page__content">
+            <div class="header-slider slider">
+              <div class="header-slider__item">
+                <h2 class="header-slider__title section__title">
+                  Elevate Your Success with Us!
+                </h2>
+                <h3 class="header-slider__subtitle section__subtitle">
+                  Turning Ideas into Reality.
+                </h3>
+              </div>
+              <div class="header-slider__item">
+                <h2 class="header-slider__title">Your Partner in Progress</h2>
+                <h3 class="header-slider__subtitle">Empowering Your Growth</h3>
+              </div>
+              <div class="header-slider__item">
+                <h2 class="header-slider__title">Business Meets Brilliance</h2>
+                <h3 class="header-slider__subtitle">
+                  Transforming Potential into Success
+                </h3>
+              </div>
+              <div class="header-slider__item">
+                <h2 class="header-slider__title">Driving Excellence</h2>
+                <h3 class="header-slider__subtitle">Delivering results</h3>
+              </div>
+              <div class="header-slider__item">
+                <h2 class="header-slider__title">Strong together</h2>
+                <h3 class="header-slider__subtitle">
+                  Your Vision, Our Mission
+                </h3>
+              </div>
+            </div>
+            <div class="arrow">
+              <img
+                class="arrow__img"
+                src="./images/section-header_arrow.png"
+                alt="Arrow"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- WHAT WE DO -->
+
+        <section class="project">
+          <h2 class="project__title">What We Do</h2>
+          <div class="project-item">
+            <img
+              class="project-item__img"
+              src="./images/building1.png"
+              alt="Building"
+            />
+            <img
+              src="./images/blue1.png"
+              alt="blue-background"
+              class="project-item__bg-top"
+            />
+            <div class="project-item__info">
+              <h3 class="project-item__subtitle">One World</h3>
+              <h2 class="project-item__title">Trade Center</h2>
+              <p
+                class="project-item__description project-item__description--hidden section-description"
+              >
+                Increasing prosperity in our lives can be accomplished by having
+                the right frame of mind. The truth is, our thoughts are very
+                powerful.
+                <br />
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Tempora ipsum voluptates earum!
+              </p>
+              <button class="project-item__button section-button">
+                MORE DETAILS
+              </button>
+              <h4 class="project-item__location">
+                <i class="icon fa-solid fa-location-dot"></i> New York City,
+                United States - 1776 feet
+              </h4>
+            </div>
+          </div>
+          <div class="project-item project-item--reverse">
+            <img
+              class="project-item__img"
+              src="./images/building2.png"
+              alt="Building image"
+            />
+            <img
+              src="./images/blue2.png"
+              alt=""
+              class="project-item__bg-bottom"
+            />
+            <div class="project-item__info">
+              <h3 class="project-item__subtitle">International</h3>
+              <h2 class="project-item__title">Commerce Center</h2>
+              <p
+                class="project-item__description project-item__description--hidden section-description"
+              >
+                Successful businesses have many things in common, today we’ll
+                look at the big ‘R’ of recognition and how a digital advertising
+                network may help.
+                <br />
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam
+                enim aspernatur eveniet omnis voluptas pariatur.
+              </p>
+              <button class="project-item__button section-button">
+                MORE DETAILS
+              </button>
+              <h5 class="project-item__location">
+                <i class="icon fa-solid fa-location-dot"></i> Hong Kong - 1588
+                Feet
+              </h5>
+            </div>
+          </div>
+        </section>
+        <section class="section-news">
+          <h2 class="section-news__title">Latest News</h2>
+          <div class="section-news__slider-wrap">
+            <div class="news-slider slider">
+              <div class="news-slider__item">
+                <img
+                  class="news-slider__img"
+                  src="./images/news_1.png"
+                  alt="Building news"
+                />
+                <div class="news-slider__container">
+                  <h2 class="news-slider__title">
+                    See The Unmatched Beauty Of The Great
+                  </h2>
+                  <p class="news-slider__description section-description">
+                    Free directories: directories are perfect for customers that
+                    are...searching for
+                  </p>
+                  <div class="news-slider__author">
+                    <img
+                      class="news-slider__author-img"
+                      src="./images/news_author1.png"
+                      alt="Author image"
+                    />
+                    <div class="news-slider__author-info">
+                      <h2 class="news-slider__author-name">Alja Brun</h2>
+                      <h3 class="news-slider__date">20 Jan 2020</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-slider__item">
+                <img
+                  class="news-slider__img"
+                  src="./images/news_2.png"
+                  alt="Building news"
+                />
+                <div class="news-slider__container">
+                  <h2 class="news-slider__title">
+                    Effective Advertising Pointers
+                  </h2>
+                  <p class="news-slider__description section-description">
+                    Having a home based business is a wonderful asset to your
+                    life...
+                  </p>
+                  <div class="news-slider__author">
+                    <img
+                      class="news-slider__author-img"
+                      src="./images/news_author2.png"
+                      alt="Author image"
+                    />
+                    <div class="news-slider__author-info">
+                      <h2 class="news-slider__author-name">Dominic Freeman</h2>
+                      <h3 class="news-slider__date">13 Dec 2019</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-slider__item">
+                <img
+                  class="news-slider__img"
+                  src="./images/news_3.png"
+                  alt="Building news"
+                />
+                <div class="news-slider__container">
+                  <h2 class="news-slider__title">
+                    Hypnotize Yourself Into The Ghost
+                  </h2>
+                  <p class="news-slider__description section-description">
+                    There are many things that are important to catalog
+                    design...
+                  </p>
+                  <div class="news-slider__author">
+                    <img
+                      class="news-slider__author-img"
+                      src="./images/news_author3.png"
+                      alt="Author image"
+                    />
+                    <div class="news-slider__author-info">
+                      <h2 class="news-slider__author-name">Alice Ward</h2>
+                      <h3 class="news-slider__date">30 Nov 2019</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-slider__item">
+                <img
+                  class="news-slider__img"
+                  src="./images/news_1.png"
+                  alt="Building news"
+                />
+                <div class="news-slider__container">
+                  <h2 class="news-slider__title">
+                    See The Unmatched <br />
+                    Beauty Of The Great
+                  </h2>
+                  <p class="news-slider__description section-description">
+                    Free directories: directories are perfect for customers that
+                    are...searching for
+                  </p>
+                  <div class="news-slider__author">
+                    <img
+                      class="news-slider__author-img"
+                      src="./images/news_author1.png"
+                      alt="Author image"
+                    />
+                    <div class="news-slider__author-info">
+                      <h2 class="news-slider__author-name">Alice Ward</h2>
+                      <h3 class="news-slider__date">30 Nov 2019</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-slider__item">
+                <img
+                  class="news-slider__img"
+                  src="./images/news_1.png"
+                  alt="Building news"
+                />
+                <div class="news-slider__container">
+                  <h2 class="news-slider__title">
+                    See The Unmatched <br />
+                    Beauty Of The Great
+                  </h2>
+                  <p class="news-slider__description section-description">
+                    Free directories: directories are perfect for customers that
+                    are...searching for
+                  </p>
+                  <div class="news-slider__author">
+                    <img
+                      class="news-slider__author-img"
+                      src="./images/news_author1.png"
+                      alt="Author image"
+                    />
+                    <div class="news-slider__author-info">
+                      <h2 class="news-slider__author-name">Alice Ward</h2>
+                      <h3 class="news-slider__date">30 Nov 2019</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section-news__arrows">
+              <div class="section-news__prev-arrow icon-wrap">
+                <img src="./images/arrow_left_icon.png" alt="" />
+              </div>
+              <div class="section-news__next-arrow icon-wrap">
+                <img src="./images/arrow_right_icon.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-gallery">
+          <h2 class="section-gallery__title">Gallery</h2>
+          <div class="section-gallery__grid grid">
+            <div class="grid__large">
+              <img class="grid__img" src="./images/gallery_large.png" alt="" />
+            </div>
+            <div class="grid__small">
+              <img class="grid__img" src="./images/gallery1.png" alt="" />
+            </div>
+            <div class="grid__small">
+              <img class="grid__img" src="./images/gallery2.png" alt="" />
+            </div>
+            <div class="grid__small">
+              <img class="grid__img" src="./images/gallery3.png" alt="" />
+            </div>
+            <div class="grid__small">
+              <img class="grid__img" src="./images/gallery4.png" alt="" />
+            </div>
+          </div>
+          <button class="section-gallery__button section-button">
+            SEE MORE
+          </button>
+        </section>
+        <section class="section-map">
+          <div id="map"></div>
+        </section>
+      </main>
+      <footer class="footer" id="test">
+        <div class="footer__content">
+          <div class="contacts">
+            <h2 class="contacts__title">Get In Touch</h2>
+            <div class="contacts__container">
+              <div class="contacts__info">
+                <p class="contacts__info-item">
+                  <i class="icon fa-solid fa-location-dot"></i> 91 Nolan
+                  Extensions Suite 670
+                </p>
+                <p class="contacts__info-item">
+                  <i class="icon fa-solid fa-phone"></i> +001 356-868-2454
+                </p>
+                <p class="contacts__info-item">
+                  <i class="icon fa-solid fa-inbox"></i> gahuy93@gmail.com
+                </p>
+                <p class="contacts__info-item">
+                  <i class="icon fa-solid fa-clock-rotate-left"></i> From
+                  07:05AM to 19:30PM
+                </p>
+              </div>
+              <div class="contacts__form-wrapper">
+                <form class="form">
+                  <label for="name"></label>
+                  <input
+                    class="form__input"
+                    id="name"
+                    name="name"
+                    placeholder="Name, surname"
+                    required
+                  />
+                  <label for="email"></label>
+                  <input
+                    class="form__input"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                  />
+                </form>
+                <button class="contacts__button section-button">SUBMIT</button>
+              </div>
+            </div>
+          </div>
+          <div class="footer__container">
+            <div>
+              <img
+                class="footer__logo logo"
+                src="./images/Logo.png"
+                alt="Logo"
+              />
+              <div class="footer__copyrights">
+                Copyrights &copy; 2024 Monticello
+              </div>
+            </div>
+            <div class="socials">
+              <img
+                class="socials__img"
+                src="./images/facebook_icon.png"
+                alt="Facebook icon"
+              />
+              <img
+                class="socials__img"
+                src="./images/twitter_icon.png"
+                alt="Twitter icon"
+              />
+              <img
+                class="socials__img"
+                src="./images/instagram_icon.png"
+                alt="Instagram icon"
+              />
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <script
+        src="https://kit.fontawesome.com/377e5fbd8a.js"
+        crossorigin="anonymous"
+      ></script>
+      <script src="./js/script.js"></script>
+      <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA697A2J0K0Ki9VMCfz4vXx5Yz-CYHd-vo&callback=initMap&v=weekly"
+        async
+      ></script>
+    </body>
+  </body>
 </html>

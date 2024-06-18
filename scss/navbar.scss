@@ -1,0 +1,40 @@
+@use "_variables" as *;
+@use "_mixin" as *;
+
+.navigation {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    overflow-x: hidden;
+
+    &-item {
+      margin-right: 5rem;
+
+      :hover {
+        @include hover-effect;
+      }
+      &-link {
+        @include fonts(14px, 22px, 400);
+        color: $primary-color;
+        position: relative;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        &::before {
+          content: "";
+          position: absolute;
+          left: -15px;
+          width: 8px;
+          height: 8px;
+          border: 1px solid $primary-color;
+          border-radius: 50%;
+        }
+        &:hover::before {
+          background-color: $primary-color;
+        }
+      }
+    }
+  }
+}
